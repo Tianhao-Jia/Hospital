@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_emergencyCallWarning"
+            app:destination="@id/emergencyCallWarning" />
+        <action
+            android:id="@+id/action_homePage_to_registerPage1"
+            app:destination="@id/registerPage1" />
+    </fragment>
+    <fragment
+        android:id="@+id/emergencyCallWarning"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.EmergencyCallWarning"
+        android:label="fragment_emergency_call_warning"
+        tools:layout="@layout/fragment_emergency_call_warning" >
+        <action
+            android:id="@+id/action_emergencyCallWarning_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPage1"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.RegisterPage1"
+        android:label="fragment_register_page1"
+        tools:layout="@layout/fragment_register_page1" >
+        <action
+            android:id="@+id/action_registerPage1_to_registerPage2"
+            app:destination="@id/registerPage2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPage2"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.RegisterPage2"
+        android:label="fragment_register_page2"
+        tools:layout="@layout/fragment_register_page2" >
+        <action
+            android:id="@+id/action_registerPage2_to_registerPage1"
+            app:destination="@id/registerPage1" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAppointment"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.AddAppointment"
+        android:label="fragment_add_appointment"
+        tools:layout="@layout/fragment_add_appointment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ugrad_4_heathcareapp.fragments.Login"
+        android:label="login"
+        tools:layout="@layout/fragment_login" />
+</navigation>

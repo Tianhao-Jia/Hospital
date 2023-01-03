@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ugrad_4_HeathCareApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hp_welcome_str">Welcome to NovaHealth</string>
+    <string name="emergency_call_warning"> Are you sure you want to dial 911?</string>
+    <string name="affirmative_response">Yes</string>
+    <string name="negative_response">No</string>
+    <string name="loginStr">Login</string>
+    <string name="registerStr">Register</string>
+    <string name="novahealthHeader">NovaHealth</string>
+    <string-array name="role">
+　　　　　　<item>Patient</item>
+　　　　　　<item>Doctor</item>
+  　</string-array>
+    <string-array name="hospital">
+        　　　　　　<item>hospital 1</item>
+        　　　　　　<item>hospital 2</item>
+        　　　　　　<item>hospital 3</item>
+        　　　　　　<item>hospital 4</item>
+        　</string-array>
+    <string-array name="time">
+        　　　　　　<item>15 minutes</item>
+        　　　　　　<item>30 minutes</item>
+        　　　　　　<item>45 minutes</item>
+        　　　　　　<item>60 minutes</item>
+        　</string-array>
+</resources>
